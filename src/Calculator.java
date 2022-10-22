@@ -30,8 +30,14 @@ public class Calculator {
 
 
              if(par1<0 && par2<0){
+                 
                  par1 = Integer.parseInt(spar1);
                  par2 = Integer.parseInt(spar2);
+                  if(par1>10 || par2>10) {
+                     System.out.println("Ops can be larger than 10");
+                     System.exit(0);
+                 }
+               
 
                  for (int i = 0; i<seq1.length(); i++){
                      if (seq2[i].codePointAt(0) == 43) {
